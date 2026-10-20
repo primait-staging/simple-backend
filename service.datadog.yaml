@@ -1,0 +1,42 @@
+# For more info, see: https://backstage.helloprima.com/catalog/default/component/vesta/docs/validator/rules/
+schema-version: v2.2
+dd-service: simple-backend
+tier: "0"
+team: developer-experience
+description: Test backend
+lifecycle: production
+contacts:
+  - name: (Routine) developer-experience Team Global Channel
+    type: slack
+    contact: https://prima.slack.com/archives/A1234567
+  - name: (Emergency) developer-experience Team Emergency Channel
+    type: slack
+    contact: https://prima.slack.com/archives/A1234657
+  - name: Security Reports # Do not remove this is mandatory
+    type: email
+    contact: security-report@prima.it
+  - name: General questions # Example of an extra contact
+    type: email
+    contact: general-questions-foo-team@prima.it
+links:
+  - name: Github Repo
+    type: repo
+    provider: github
+    url: https://github.com/primait-staging/simple-backend
+  - name: Team home page
+    type: doc
+    provider: Notion
+    url: https://www.notion.so/helloprima/my-cool-team-homepage/
+  - name: Runbooks
+    type: runbook
+    provider: Backstage
+    url: https://backstage.helloprima.com/docs/default/component/my-cool-service/
+extensions:
+  prima/metadata:
+    department: engineering
+    country:
+    domain:
+    github-project-slug: primait/simple-backend
+    backstage-techdocs-ref: "dir:."
+type: web
+languages: ['rust', 'elixir']
